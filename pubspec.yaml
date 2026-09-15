@@ -1,0 +1,146 @@
+name: crm_project
+description: "Kiya System - نظام إدارة علاقات العملاء والمبيعات"
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # =============================================
+  # ✅ LOCALIZATION (3 LANGUAGES: AR / EN / ZH)
+  # =============================================
+  flutter_localizations:
+    sdk: flutter
+  intl: any  # ⚠️ MUST be `any` when using easy_localization
+  easy_localization: ^3.0.7
+
+  # =============================================
+  # ✅ UI & ANIMATION
+  # =============================================
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_screenutil: ^5.9.3
+  animations: ^2.0.11
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.0
+  lottie: ^3.1.2                        # ✨ للرسوم المتحركة الاحترافية
+  flutter_spinkit: ^5.2.1               # ✨ مؤشرات تحميل جاهزة
+
+  # =============================================
+  # ✅ STATE MANAGEMENT
+  # =============================================
+  provider: ^6.1.2
+
+  # =============================================
+  # ✅ BACKEND & API - SUPABASE
+  # =============================================
+  supabase_flutter: ^2.17.2
+
+  # =============================================
+  # ✅ DEVICE & PERMISSIONS
+  # =============================================
+  device_info_plus: ^11.1.0              # ⚠️ محدّث لدعم Web بشكل صحيح
+  permission_handler: ^11.3.0
+
+  # =============================================
+  # ✅ LOCATION
+  # =============================================
+  location: ^5.0.0
+  geocoding: ^2.0.0
+
+  # =============================================
+  # ✅ STORAGE
+  # =============================================
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.0
+
+  # =============================================
+  # ✅ ID GENERATION
+  # =============================================
+  uuid: ^4.4.2
+
+  # =============================================
+  # ✅ PRINTING & PDF & EXPORT
+  # =============================================
+  printing: ^5.11.1
+  pdf: ^3.10.7
+  excel: ^2.0.0
+  share_plus: ^10.1.2                    # ✨ لمشاركة الملفات
+
+  # =============================================
+  # ✅ CHARTS
+  # =============================================
+  fl_chart: ^0.68.0
+
+  # =============================================
+  # ✅ FILES & IMAGES
+  # =============================================
+  image_picker: ^1.1.2
+  file_picker: ^8.0.6
+  photo_view: ^0.14.0
+
+  # =============================================
+  # ✅ UTILITIES
+  # =============================================
+  url_launcher: ^6.3.0
+  connectivity_plus: ^6.0.3
+  logger: ^2.4.0
+  timeago: ^3.6.0
+  mask_text_input_formatter: ^2.9.0
+  flutter_dotenv: ^6.0.1
+  package_info_plus: ^8.1.1              # ✨ لجلب معلومات التطبيق
+
+  # =============================================
+  # ✅ WHATSAPP & CONTACTS (اختياري - uncomment عند الحاجة)
+  # =============================================
+  # contacts_service: ^0.6.3
+  # flutter_contacts: ^1.1.3
+
+  # =============================================
+  # ✅ NOTIFICATIONS (اختياري - uncomment عند الحاجة)
+  # =============================================
+  # flutter_local_notifications: ^17.2.1+1
+  # firebase_messaging: ^15.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13                  # ✨ لو هتستخدم code generation
+
+flutter:
+  uses-material-design: true
+
+  # =============================================
+  # ✅ ASSETS
+  # =============================================
+  assets:
+    - .env
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/translations/               # ✨ ملفات الترجمة (ar/en/zh)
+    - assets/animations/                 # ✨ ملفات Lottie
+
+  # =============================================
+  # ✅ FONTS (Cairo - 5 weights)
+  # =============================================
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-Black.ttf
+          weight: 900
+          
